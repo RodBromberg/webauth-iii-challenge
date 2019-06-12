@@ -8,8 +8,15 @@
   "dependencies": {
     "3": "^2.1.0",
     "bcryptjs": "^2.4.3",
+    "connect-session-knex": "^1.4.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "express-router": "^0.0.1",
+    "express-session": "^1.16.1",
+    "helmet": "^3.18.0",
+    "jsonwebtoken": "^8.5.1",
     "knex": "^0.17.5",
+    "nodemon": "^1.19.1",
     "sqlite": "^3.0.3"
   }
 }
