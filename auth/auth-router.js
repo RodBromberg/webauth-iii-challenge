@@ -3,7 +3,30 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const Users = require('../data/dbMethods')
 const restriced = require('./restricted-middleware')
-    // const secrets = require('../config/secrets')
+const secrets = require('../config/secrets.js')
+
+// generateToken = user => {
+//     jwt.sign({
+//         userId: user.id,
+//     }, 'super secret', {
+//         expiresIn: '1h',
+//     } (err, token))
+// }
+
+
+generateToken = user => {
+    const payload = {
+        subject: user.id, // sub
+        username: user.username
+            // ...other data
+
+    }
+    const options = {
+        expiresIn: '8h',
+    }
+
+    return jwt.sign(payload, secrets.jwtSecret, options)
+}
 
 router.post('/register', (req, res) => {
     let user = req.body;
