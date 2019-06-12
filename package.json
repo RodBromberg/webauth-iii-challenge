@@ -1,0 +1,15 @@
+{
+  "name": "webauth-iii-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/RodBromberg/webauth-iii-challenge.git",
+  "author": "RodBromberg <rod.bromberg@yahoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "3": "^2.1.0",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "knex": "^0.17.5",
+    "sqlite": "^3.0.3"
+  }
+}
